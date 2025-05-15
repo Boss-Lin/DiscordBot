@@ -24,7 +24,8 @@ async def on_message(message):
         return
     # 新訊息包含Hello，回覆Hello, world!
     if message.content == "Hello":
-        await message.channel.send("Hello, world!")
+        # await message.channel.send("Hello, world!")
+        await message.channel.send("這是第一行\nhttps://www.youtube.com/\n這是第三行")
 
 
 client.run(token)
